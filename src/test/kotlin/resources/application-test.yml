@@ -1,0 +1,12 @@
+# Substitui banco de testes
+datasources:
+  default:
+    url: jdbc:h2:mem:testDb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    driverClassName: org.h2.Driver
+
+#    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=autor_test
+
+# Habilita log do contexto transacional
+logger:
+  levels:
+    io.micronaut.transaction: DEBUG
